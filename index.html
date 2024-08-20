@@ -3,6 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio and Spectrogram Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            margin-bottom: 30px;
+        }
+        .spectrogram {
+            display: flex;
+            align-items: center;
+        }
+        .spectrogram img {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Demo of Direct Sound Estimation (DSE)</h2>
+    <div class="container">
+        <h3>Utterance ID: S072-R03_S072073_C01_I1_Far-112160_112296</h3>
+        <div class="spectrogram">
+            <div>
+                <strong>Near</strong>
+                <audio controls>
+                    <source src="assets/audio/Direct_Sound_Estimation/near_S072-R03_S072073_C01_I1_Far-112160_112296.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <img src="assets/images/Direct_Sound_Estimation/near_S072-R03_S072073_C01_I1_Far-112160_112296.png" alt="Spectrogram for Near" width="400">
+        </div>
+        <div class="spectrogram">
+            <div>
+                <strong>GSS</strong>
+                <audio controls>
+                    <source src="assets/audio/Direct_Sound_Estimation/GSS_S072-R03_S072073_C01_I1_Far-112160_112296.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <img src="assets/images/Direct_Sound_Estimation/GSS_S072-R03_S072073_C01_I1_Far-112160_112296.png" alt="Spectrogram for GSS" width="400">
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio Demo</title>
     <style>
         body {
