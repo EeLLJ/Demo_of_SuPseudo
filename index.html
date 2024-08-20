@@ -3,39 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio and Image Demo</title>
-</head>
-<body>
-    <h1>Audio and Image Demo</h1>
-
-    <h2>Audio Demo</h2>
-    <audio controls>
-        <source src="assets/audio/Direct_Sound_Estimation/DSE_S072-R03_S072073_C01_I1_Far-112160_112296.wav" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>Image Demo</h2>
-    <img src="assets/images/Direct_Sound_Estimation/DSE_S072-R03_S072073_C01_I1_Far-112160_112296.png" alt="Demo Image">
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio and Spectrogram Demo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-        }
-        h1 {
-            color: #00695c;
-        }
-        h2 {
-            color: #004d40;
         }
         .container {
             margin-bottom: 30px;
@@ -51,12 +23,12 @@
 </head>
 <body>
 
-    <h1>Monural Input</h1>
+    <h2>Demo of Direct Sound Estimation (DSE)</h2>
     <div class="container">
-        <p>Utterance ID=F05_447C020T_BUS &nbsp;&nbsp; Target Speaker</p>
+        <h3>Utterance ID: S072-R03_S072073_C01_I1_Far-112160_112296</h3>
         <div class="spectrogram">
             <div>
-                <h2>Mixture</h2>
+                near
                 <audio controls>
                     <source src="assets/audio/Direct_Sound_Estimation/near_S072-R03_S072073_C01_I1_Far-112160_112296.wav" type="audio/mpeg">
                     Your browser does not support the audio element.
@@ -69,7 +41,7 @@
     <div class="container">
         <div class="spectrogram">
             <div>
-                <h2>Supervised 1ch</h2>
+                GSS
                 <audio controls>
                     <source src="assets/audio/Direct_Sound_Estimation/GSS_S072-R03_S072073_C01_I1_Far-112160_112296.wav" type="audio/mpeg">
                     Your browser does not support the audio element.
