@@ -3,21 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio and Spectrogram Demo</title>
+    <title>Audio Demo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: #f4f4f4;
         }
         .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
+            padding: 20px;
         }
         .spectrogram {
             display: flex;
             align-items: center;
+            margin-top: 10px;
         }
         .spectrogram img {
             margin-left: 20px;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        audio {
+            width: 300px;
+        }
+        @media (max-width: 600px) {
+            .spectrogram {
+                flex-direction: column;
+            }
+            .spectrogram img {
+                margin-left: 0;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
@@ -28,29 +50,27 @@
         <h3>Utterance ID: S072-R03_S072073_C01_I1_Far-112160_112296</h3>
         <div class="spectrogram">
             <div>
-                near
+                <strong>Near</strong>
                 <audio controls>
                     <source src="assets/audio/Direct_Sound_Estimation/near_S072-R03_S072073_C01_I1_Far-112160_112296.wav" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </div>
-            <img src="assets/images/Direct_Sound_Estimation/near_S072-R03_S072073_C01_I1_Far-112160_112296.png" alt="Spectrogram for Mixture" width="400">
+            <img src="assets/images/Direct_Sound_Estimation/near_S072-R03_S072073_C01_I1_Far-112160_112296.png" alt="Spectrogram for Near">
         </div>
-    </div>
-
-    <div class="container">
         <div class="spectrogram">
             <div>
-                GSS
+                <strong>GSS</strong>
                 <audio controls>
                     <source src="assets/audio/Direct_Sound_Estimation/GSS_S072-R03_S072073_C01_I1_Far-112160_112296.wav" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </div>
-            <img src="assets/images/Direct_Sound_Estimation/GSS_S072-R03_S072073_C01_I1_Far-112160_112296.png" alt="Spectrogram for Supervised 1ch" width="400">
+            <img src="assets/images/Direct_Sound_Estimation/GSS_S072-R03_S072073_C01_I1_Far-112160_112296.png" alt="Spectrogram for GSS">
         </div>
     </div>
 
+    <!-- Repeat the above container block for additional audio files and spectrograms -->
+
 </body>
 </html>
-
