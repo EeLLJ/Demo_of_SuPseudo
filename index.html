@@ -9,44 +9,174 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
+        h3 {
+            background-color: lightblue; /* 设置背景颜色 */
+            padding: 10px; /* 增加内边距 */
+            border-radius: 5px; /* 使边角圆润 */
+        }
         .container {
             margin-bottom: 30px;
+            /*
+            padding: 20px; 
+            background-color: #f9f9f9; 
+            border: 1px solid #ddd; 
+            border-radius: 8px; 
+            */
         }
-        .spectrogram {
-            display: flex;
+        .a_sample {
             align-items: center;
+            display: flex;
+            margin-bottom: 20px; /* 底部间距 */
         }
-        .spectrogram img {
-            margin-left: 20px;
+        .a_sample strong {
+            margin-left: 60px;
+            width: 200px;
+            margin-right: 20px;
+        }
+        .a_sample audio {
+            width: 300px;
+            margin-right: 40px;
+        }
+        .a_sample img {            
+            margin-top: 10px;
+            width: 500px;
+            height: auto;
         }
     </style>
 </head>
 <body>
-
-    <h2>Demo of Direct Sound Estimation (DSE)</h2>
     <div class="container">
-        <h3>Utterance ID: S072-R03_S072073_C01_I1_Far-112160_112296</h3>
-        <div class="spectrogram">
-            <div>
-                <strong>Near</strong>
-                <audio controls>
-                    <source src="assets/audio/Direct_Sound_Estimation/near_S072-R03_S072073_C01_I1_Far-112160_112296.wav" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <img src="assets/images/Direct_Sound_Estimation/near_S072-R03_S072073_C01_I1_Far-112160_112296.png" alt="Spectrogram for Near" width="400">
+        <h2 align="center">Demo of <i>Direct Sound Estimation (DSE)</i> on MISP2023 training set</h2>
+        
+        <h3>Utterance ID 1: S072-R03_S072073_C01_I1_Far-112160_112296</h3>
+        <div class="a_sample">
+            <strong>Near-Field Recording</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/near_S072-R03_S072073_C01_I1_Far-112160_112296.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/near_S072-R03_S072073_C01_I1_Far-112160_112296.png" alt="Spectrogram for Near">
         </div>
-        <div class="spectrogram">
-            <div>
-                <strong>GSS</strong>
-                <audio controls>
-                    <source src="assets/audio/Direct_Sound_Estimation/GSS_S072-R03_S072073_C01_I1_Far-112160_112296.wav" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <img src="assets/images/Direct_Sound_Estimation/GSS_S072-R03_S072073_C01_I1_Far-112160_112296.png" alt="Spectrogram for GSS" width="400">
+        <div class="a_sample">
+            <strong>GSS</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/GSS_S072-R03_S072073_C01_I1_Far-112160_112296.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/GSS_S072-R03_S072073_C01_I1_Far-112160_112296.png" alt="Spectrogram for GSS">
+        </div>
+        <div class="a_sample">
+            <strong>DSE</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/DSE_S072-R03_S072073_C01_I1_Far-112160_112296.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/DSE_S072-R03_S072073_C01_I1_Far-112160_112296.png" alt="Spectrogram for GSS">
+        </div>
+
+        <h3>Utterance ID 2: S080-R03_S079080081_C02_I0_Far-088488_088608</h3>
+        <div class="a_sample">
+            <strong>Near-Field Recording</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/near_S080-R03_S079080081_C02_I0_Far-088488_088608.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/near_S080-R03_S079080081_C02_I0_Far-088488_088608.png" alt="Spectrogram for Near">
+        </div>
+        <div class="a_sample">
+            <strong>GSS</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/GSS_S080-R03_S079080081_C02_I0_Far-088488_088608.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/GSS_S080-R03_S079080081_C02_I0_Far-088488_088608.png" alt="Spectrogram for GSS">
+        </div>
+        <div class="a_sample">
+            <strong>DSE</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/DSE_S080-R03_S079080081_C02_I0_Far-088488_088608.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/DSE_S080-R03_S079080081_C02_I0_Far-088488_088608.png" alt="Spectrogram for GSS">
+        </div>
+
+        <h3>Utterance ID 3: S158-R08_S158159160_C02_I0_Far-030616_030860</h3>
+        <div class="a_sample">
+            <strong>Near-Field Recording</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/near_S158-R08_S158159160_C02_I0_Far-030616_030860.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/near_S158-R08_S158159160_C02_I0_Far-030616_030860.png" alt="Spectrogram for Near">
+        </div>
+        <div class="a_sample">
+            <strong>GSS</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/GSS_S158-R08_S158159160_C02_I0_Far-030616_030860.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/GSS_S158-R08_S158159160_C02_I0_Far-030616_030860.png" alt="Spectrogram for GSS">
+        </div>
+        <div class="a_sample">
+            <strong>DSE</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/DSE_S158-R08_S158159160_C02_I0_Far-030616_030860.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/DSE_S158-R08_S158159160_C02_I0_Far-030616_030860.png" alt="Spectrogram for GSS">
+        </div>
+
+        <h3>Utterance ID 4: S274-R52_S274275276277278279_C06_I1_Far-079404_079700</h3>
+        <div class="a_sample">
+            <strong>Near-Field Recording</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/near_S274-R52_S274275276277278279_C06_I1_Far-079404_079700.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/near_S274-R52_S274275276277278279_C06_I1_Far-079404_079700.png" alt="Spectrogram for Near">
+        </div>
+        <div class="a_sample">
+            <strong>GSS</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/GSS_S274-R52_S274275276277278279_C06_I1_Far-079404_079700.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/GSS_S274-R52_S274275276277278279_C06_I1_Far-079404_079700.png" alt="Spectrogram for GSS">
+        </div>
+        <div class="a_sample">
+            <strong>DSE</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/DSE_S274-R52_S274275276277278279_C06_I1_Far-079404_079700.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/DSE_S274-R52_S274275276277278279_C06_I1_Far-079404_079700.png" alt="Spectrogram for GSS">
+        </div>
+
+        <h3>Utterance ID 5: S305-R55_S303304305_C03_I0_Far-011072_011344</h3>
+        <div class="a_sample">
+            <strong>Near-Field Recording</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/near_S305-R55_S303304305_C03_I0_Far-011072_011344.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/near_S305-R55_S303304305_C03_I0_Far-011072_011344.png" alt="Spectrogram for Near">
+        </div>
+        <div class="a_sample">
+            <strong>GSS</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/GSS_S305-R55_S303304305_C03_I0_Far-011072_011344.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/GSS_S305-R55_S303304305_C03_I0_Far-011072_011344.png" alt="Spectrogram for GSS">
+        </div>
+        <div class="a_sample">
+            <strong>DSE</strong>
+            <audio controls>
+                <source src="assets/audio/Direct_Sound_Estimation/DSE_S305-R55_S303304305_C03_I0_Far-011072_011344.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="assets/images/Direct_Sound_Estimation/DSE_S305-R55_S303304305_C03_I0_Far-011072_011344.png" alt="Spectrogram for GSS">
         </div>
     </div>
-    
 </body>
 </html>
